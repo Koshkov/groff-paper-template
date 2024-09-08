@@ -1,0 +1,16 @@
+\" Basic document settings and macros for academic papers
+\" Author: Mathieu Landretti
+\" Last Updated: 2024-09-08
+
+.nr PS 12p 		\" Sets font-size
+.nr VS 24p		\" Sets line-space (double font-size for double space)
+.ds FAM T 		\" Sets font-family (T: Serif, H: Sans-Serif, C: Monospace)
+.de CODE		\" Custom macro for code blocks
+. sp
+. ft C
+. vs 12p
+. nf
+..
+.de BL			\" Custom macro for bullet points
+. IP \(bu 2
+..
