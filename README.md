@@ -61,3 +61,8 @@ to learn more about how bibliographies with Groff, you can read the man page for
 
 Also, this [no-tears guide](https://preciouschicken.com/blog/posts/no-tears-references-groff/)
 to adding references in Groff by Precious Chicken is fantastic.
+
+## TODO
+
+I will fork the tamc file from refer and change the end bibliography to follow
+APA standards.
