@@ -41,10 +41,21 @@ define NN `bold N`
 define CC `bold C`
 .EN
 ```
+## UTF-8 Character Support 
+
+I have added a macro file called `utf8.tmac` which contains some LaTeX 
+style macros for basic UTF-8 characters. A complete list of UTF-8 chars supported
+by groff can be found [here](https://man.archlinux.org/man/groff_char.7.en).
+
+You can define your own macro as follows:
+
+```
+.ds <Macro> <\[UTF]>
+```
 
 ## Bibliography Management 
 
-I have also provided a simple template for bibliography management. If you want
+I have provided a simple template for bibliography management. If you want
 to learn more about how bibliographies with Groff, you can read the man page for 
 [refer](https://preciouschicken.com/blog/posts/no-tears-references-groff/). 
 

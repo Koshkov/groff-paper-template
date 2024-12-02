@@ -2,20 +2,22 @@
 \" Last Updated: 2024-09-08
 
 .so ./macros/paper.tmac
+.so ./macros/math.tmac
+.so ./macros/utf8.tmac
 
 \" Additional definitions for math documents
-.EQ 
-delim $$
+\".EQ 
+\"delim $$
 
-define forall `\[fa]`
-define exists `\[te]`
-define implies `\[rA]`
-define in `\[mo]`
+\"define forall `\[fa]`
+\"define exists `\[te]`
+\"define implies `\[rA]`
+\"define in `\[mo]`
 
-define RR `bold R`
-define NN `bold N`
-define CC `bold C`
-.EN
+\"define RR `bold R`
+\"define NN `bold N`
+\"define CC `bold C`
+\".EN
 
 \" Styles for in-text citations
 .R1
@@ -35,18 +37,18 @@ Mathieu Landretti
 .AI
 School of Hard Knocks
 .AB
-This is a simple template for creating APA like papers using the Groff MS 
+This is a simple template for creating ``APA like'' papers using the Groff MS 
 macros. It includes a simple paper template, some useful math symbols, and
 a template for APA style in-text citations. 
 .AE
+.DA
 .NH 1
 Compiling Documents
 .LP
 Compiling documents is fairly straight forward. I generally run groff with
 a few basic preprocessors. This document requires both eqn and refer to 
 properly compile.
-.ce
-.CODE
+.CD
 groff -Re -ms paper.ms -Tpdf > paper.pdf
 .NH 1
 Editing the Document Format

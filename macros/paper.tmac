@@ -2,15 +2,26 @@
 \" Author: Mathieu Landretti
 \" Last Updated: 2024-09-08
 
+\" Registers
 .nr PS 12p 		\" Sets font-size
 .nr VS 24p		\" Sets line-space (double font-size for double space)
+.nr LL 6.5i 
+.nr PD 0.3v
 .ds FAM T 		\" Sets font-family (T: Serif, H: Sans-Serif, C: Monospace)
-.de CODE		\" Custom macro for code blocks
-. sp
+
+.ds REFERENCES \f[B]References\f[] 
+.ds ABSTRACT \f[I]ABSTRACT\f[] 
+
+\" Custom macros
+.de CD			\" Custom macro for code blocks
+. sp 1
 . ft C
 . vs 12p
 . nf
+\l'\n(.lu'
+. sp 1
 ..
+
 .de BL			\" Custom macro for bullet points
-. IP \(bu 2
+. IP \[bu] 2
 ..
